@@ -364,8 +364,8 @@ nav {
 	top: 0;
 	width: 100%;
 	height: 100px; /* nav height */
-	background: #96bd8f;
-	border-bottom: 3px solid #96bd8f;
+	background: #94ac91;
+	border-bottom: 3px solid #94ac91;
 	transition: top 0.3s;
 	box-shadow: rgba(50, 50, 93, 0.253) 0px 1px 10px, 
 				rgba(0, 0, 0, 0.185) 0px 2px 4px;
@@ -622,7 +622,7 @@ nav ul li a {
 		  (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childrenNumber)
 		);
 		/*   (Block Level Padding + The Font Size) * The Number of Children   */
-		border-bottom: 4px solid #96bd8f;
+		border-bottom: 4px solid #94ac91;
 		box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, 
 					rgb(0 0 0 / 30%) 0px 3px 7px -3px;
 		transition: 600ms ease;
@@ -2666,7 +2666,7 @@ nav ul li a {
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #62a456;
+			border-color: #698665;
 		}
 
 	
@@ -2774,7 +2774,7 @@ nav ul li a {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #62a456;
+			border-color: #698665;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2868,7 +2868,7 @@ nav ul li a {
 		}
 
 		.icon.style2:before {
-			color: #90c187;
+			color: #8ca588;
 		}
 
 		.icon.style3:before {
@@ -3236,7 +3236,7 @@ nav ul li a {
 	#map { 
 		height: 45em;
 		max-width: 100%;
-		border: 2px solid #90c187; 
+		border: 2px solid #8ca588; 
 		box-shadow: rgba(50, 50, 93, 0.253) 0px 1px 10px, 
 		 			rgba(0, 0, 0, 0.185) 0px 2px 4px;
 		 
@@ -3407,7 +3407,7 @@ nav ul li a {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #90c187;
+			background-color: #8ca588;
 			box-shadow: none !important;
 			color: #fff !important;
 		}
@@ -3417,7 +3417,7 @@ nav ul li a {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #7bbd70; /*hovercolor*/
+				background-color: #7e9a79; /*hovercolor*/
 			}
 
 			input[type="submit"].primary:active,
@@ -3425,7 +3425,7 @@ nav ul li a {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #62a456;
+				background-color: #698665;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3540,14 +3540,6 @@ nav ul li a {
 				color: #ffffff;
 			}
 
-		/* .main.style3 {
-			background-color: #96bd8f;
-			color: rgba(255, 255, 255, 0.774);
-		}
-			.main.style3 header.major h2, .main.style3 header.major p{
-				color: #ffffff;
-			} */
-
 
 		#eight.main {
 			padding-bottom: 1em;
@@ -3571,7 +3563,7 @@ nav ul li a {
 		-ms-align-items: center;
 		align-items: center;
 		flex-shrink: 0;
-		background-color: #90c187;
+		background-color: #8ca588;
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
@@ -3581,7 +3573,7 @@ nav ul li a {
 	}
 
 	.icon-box:hover {
-		background-color: #7bbd70;
+		background-color: #7e9a79;
 	}
 	
 	.icon-container {
@@ -3777,7 +3769,7 @@ nav ul li a {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-color: #96bd8f;
+			background-color: #94ac91;
 			background-color: rgba(29, 29, 29, 0.205);
 			content: '';
 			height: 100%;
@@ -3821,7 +3813,7 @@ nav ul li a {
 		color: inherit;
 	  	width: 100%;
 		height: fit-content;
-	  	border-top: 1px dotted #90c187;
+	  	border-top: 1px dotted #8ca588;
 	 	border-radius: 0;
 	  	text-align: left;
 	  	outline: 0;		
@@ -3851,7 +3843,7 @@ nav ul li a {
 	}
 
 	.fa-caret-down {
-		color: #90c187;
+		color: #8ca588;
 	}
 
 	
@@ -3861,7 +3853,7 @@ nav ul li a {
 
 
 	button.accordion:hover {
-		background-color: #90c187;
+		background-color: #8ca588;
 		color: #ffffff !important;		
 	  }
 
@@ -3871,7 +3863,7 @@ nav ul li a {
 
 
 	button.active-acc {
-		background-color: #90c187;
+		background-color: #8ca588;
 		color: #ffffff !important;			
 	}
 	
@@ -3920,7 +3912,7 @@ nav ul li a {
 
 	#footer {
 		padding: 4em 0 4em 0 ;
-		background-color: #96bd8f;
+		background-color: #94ac91;
 		color: rgba(255, 255, 255, 0.932);		
 		text-align: center;
 		box-shadow: inset rgba(50, 50, 93, 0.253) 0px 1px 10px, 
@@ -3981,11 +3973,18 @@ nav ul li a {
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 			text-align: left;
 		}
+		
 
 			#footer a:hover {
 				color: #115c4d;
 			}
 
+		#footer .location, #footer p {
+			margin-bottom: 1.75em;
+			margin-right: 1.75em;
+			text-align: left;
+		}
+		
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b {
 			color: #ffffff;
 		}
@@ -4067,8 +4066,12 @@ nav ul li a {
 			font-size: 0.8em;
 			list-style: none;
 			margin: 2em 0 0 0;
-			padding: 0;
+			padding: 0;		
 		}
+
+			#footer .copyright p {
+				text-align: center;
+			}
 
 			#footer .copyright li {
 				border-left: solid 1px;
@@ -4083,6 +4086,7 @@ nav ul li a {
 					margin-left: 0;
 					padding: 0;
 				}
+			
 
 
 
@@ -4109,11 +4113,8 @@ nav ul li a {
 			margin: 0 0 0 0;
 		}
 
-		#footer .container address a.location {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-bottom: 1.5em;
+		#footer .container + .container {
+			align-items: flex-start;
 		}
 	
 	}
@@ -4193,6 +4194,11 @@ nav ul li a {
 				padding: 4em 0 4em 0 ;
 				background-attachment: scroll;
 			}
+
+			#footer .wrapper {
+				flex-direction: column;
+			}
+			
 
 	}
 
