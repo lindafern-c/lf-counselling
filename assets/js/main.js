@@ -1,12 +1,8 @@
-/* Web Developer Triss Marsh (distriss.github.io/portfolio) 
+/* Web Developer Triss Marsh (https://github.com/distriss) 
 	// Nav // Accordion // Map // Prevent Default
 */ 
 
-/* 
-	Design by Photon by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 
 
