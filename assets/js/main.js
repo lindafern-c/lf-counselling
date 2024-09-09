@@ -1,12 +1,8 @@
-/* Web Developer Triss Marsh (distriss.github.io/portfolio) 
+/* Web Developer Triss Marsh (https://github.com/distriss) 
 	// Nav // Accordion // Map // Prevent Default
 */ 
 
-/* 
-	Design by Photon by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
 
 
 
@@ -96,8 +92,13 @@ Array.from(bacp).forEach(e => e.addEventListener('contextmenu', e => e.preventDe
 
 // Map
 
+	const locations = [
+		["Lotus Therapy Center", 53.140442395542756, -1.1958635372977526],
+		["Being Psychotherapy", 52.92426570681056, -1.4902154740111735]
+	];
+
 	// map initialization - and address cordinates
-	const map = L.map('map').setView([53.14115344089842, -1.1956592539777418], 15)
+	const map = L.map('map').setView([53.042255229863876, -1.3158058748407906], 10)
 	
 	//osm layer
 	const osm = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -107,17 +108,27 @@ Array.from(bacp).forEach(e => e.addEventListener('contextmenu', e => e.preventDe
 	
 	osm.addTo(map)
 	
-	// map marker
-	const marker = L.marker([53.140442395542756, -1.1958635372977526])
+
+	// map markers	and popups
+
+	for (let i = 0; i < locations.length; i++) {
+		marker = new L.Marker([locations[i][1], locations[i][2]])
+		.bindPopup(locations[i][0])
+		.addTo(map)
+		.on('click', function() {
+			map.setView([locations[i][1], locations[i][2]], 15)
+		});
+
+	}
 
 	
-	// marker popup
-	const popup = marker.bindPopup("Lotus Therapy Centre").openPopup()
-	popup.addTo(map)
+	// // leaflet handlers
+	// map.scrollWheelZoom.disable()
+	// map.dragging.disable()
+
 	
-	// leaflet handlers
-	map.scrollWheelZoom.disable()
-	map.dragging.disable()
+// copyright current year
 
-
+const copyrightYear = new Date().getFullYear();
+document.getElementById("copyrightYear").textContent = copyrightYear;
 	

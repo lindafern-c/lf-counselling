@@ -1,10 +1,4 @@
-/* Web Developer Triss Marsh (distriss.github.io/portfolio) */
-
-/*
-	Design by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+/* Web Developer Triss Marsh (https://github.com/distriss) */
 
 /* Background Image Unsplash.com
 	@jamesashwood James Ashwood 
@@ -31,7 +25,7 @@ section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 100%;
+	font-size: 100%;	
 	font: inherit;
 	vertical-align: baseline;}
 
@@ -45,6 +39,10 @@ body {
 
 ol, ul {
 	list-style: none;
+}
+
+a {
+	text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);
 }
 
 blockquote, q {
@@ -157,6 +155,7 @@ input, select, textarea {
 
 	h1, h2, h3, h4, h5, h6 {
 		color: #555;
+		text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);
 		line-height: 1em;
 		margin: 0;
 	}
@@ -344,6 +343,7 @@ section.nav {			/* nav section nav height original 100px*/
 
 nav .selected {
 	color: #155d4f;
+	font-weight: bolder;
 }
 
 nav {
@@ -364,11 +364,11 @@ nav {
 	top: 0;
 	width: 100%;
 	height: 100px; /* nav height */
-	background: #96bd8f;
-	border-bottom: 3px solid #96bd8f;
+	background: #94ac91;
+	border-bottom: 3px solid #94ac91;
 	transition: top 0.3s;
-	box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, 
-				rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+	box-shadow: rgba(50, 50, 93, 0.253) 0px 1px 10px, 
+				rgba(0, 0, 0, 0.185) 0px 2px 4px;
 
 
 }
@@ -447,6 +447,7 @@ nav ul li.nest a {
 
 nav ul li a {
 	color: #ffffff;
+	text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);
 	text-decoration: none;
 	display: -moz-flex;
 	display: -webkit-flex;
@@ -561,8 +562,7 @@ nav ul li a {
 	  }
 	  
 	  .logo-special {
-		margin-inline: 1.5em;
-		box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;		
+		margin-inline: 1.5em;		
 	  }
 
 	  #six .logo-special {
@@ -588,6 +588,7 @@ nav ul li a {
 
 	.active li a {
 		color: #155d4f;
+		
 	  }
 
 	.active li.nest a {
@@ -623,7 +624,7 @@ nav ul li a {
 		  (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childrenNumber)
 		);
 		/*   (Block Level Padding + The Font Size) * The Number of Children   */
-		border-bottom: 4px solid #96bd8f;
+		border-bottom: 4px solid #94ac91;
 		box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, 
 					rgb(0 0 0 / 30%) 0px 3px 7px -3px;
 		transition: 600ms ease;
@@ -2667,7 +2668,7 @@ nav ul li a {
 		input[type="tel"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #62a456;
+			border-color: #698665;
 		}
 
 	
@@ -2775,7 +2776,7 @@ nav ul li a {
 
 		input[type="checkbox"]:focus + label:before,
 		input[type="radio"]:focus + label:before {
-			border-color: #62a456;
+			border-color: #698665;
 		}
 
 	input[type="checkbox"] + label:before {
@@ -2866,15 +2867,18 @@ nav ul li a {
 
 		.icon.style1:before {
 			color: #ffffff;
+			text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);
 		}
 
 		.icon.style2:before {
-			color: #90c187;
+			color: #8ca588;
+			text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);
 		}
 
 		.icon.style3:before {
 			color: #ffffff;
 			color: rgba(255, 255, 255, 0.863);
+			text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);
 		}
 
 		.icon.style4:before {
@@ -2978,6 +2982,7 @@ nav ul li a {
 		.image.logo-icon {
 			max-width: max-content;
 			margin: auto;
+			filter: drop-shadow(1px 2px 4px rgba(90, 90, 90, 0.267));
 		}
 
 		.image.logo-text {
@@ -2988,6 +2993,7 @@ nav ul li a {
 		.image.nav-logo {
 			height: 100px;
 			display: block;
+			filter: drop-shadow(1px 1px 1px rgba(90, 90, 90, 0.267));
 		}
 
 			
@@ -3235,9 +3241,11 @@ nav ul li a {
 /* Map */
 
 	#map { 
-		height: 30em;
+		height: 45em;
 		max-width: 100%;
-		border: 2px solid #90c187;
+		border: 2px solid #8ca588; 
+		box-shadow: rgba(50, 50, 93, 0.253) 0px 1px 10px, 
+		 			rgba(0, 0, 0, 0.185) 0px 2px 4px;
 		 
 	 }
 
@@ -3330,6 +3338,7 @@ nav ul li a {
 		border: 0;
 		box-shadow: inset 0 0 0 1px rgba(144, 144, 144, 0.5);
 		color: #555 !important;
+		text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);
 		cursor: pointer;
 		display: inline-block;
 		font-size: 0.9em;
@@ -3406,7 +3415,7 @@ nav ul li a {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #90c187;
+			background-color: #8ca588;
 			box-shadow: none !important;
 			color: #fff !important;
 		}
@@ -3416,7 +3425,7 @@ nav ul li a {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #7bbd70; /*hovercolor*/
+				background-color: #7e9a79; /*hovercolor*/
 			}
 
 			input[type="submit"].primary:active,
@@ -3424,7 +3433,7 @@ nav ul li a {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #62a456;
+				background-color: #698665;
 			}
 
 		input[type="submit"].disabled, input[type="submit"]:disabled,
@@ -3449,6 +3458,7 @@ nav ul li a {
 		.main.style1 {
 			background: #fff;
 		}
+		
 
 		.main.style2 {
 			background-color: #333;
@@ -3538,14 +3548,14 @@ nav ul li a {
 				color: #ffffff;
 			}
 
-			#eight.main {
-				padding-bottom: 1em;
-			}
 
-			#nine.main {
-				padding-top: 1em;
-			}
+		#eight.main {
+			padding-bottom: 1em;
+		}
 
+		#nine.main {
+			padding-top: 1em;
+		}
 		
 	.icon-box {
 		display: -moz-flex;
@@ -3561,7 +3571,7 @@ nav ul li a {
 		-ms-align-items: center;
 		align-items: center;
 		flex-shrink: 0;
-		background-color: #90c187;
+		background-color: #8ca588;
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
@@ -3571,7 +3581,7 @@ nav ul li a {
 	}
 
 	.icon-box:hover {
-		background-color: #7bbd70;
+		background-color: #7e9a79;
 	}
 	
 	.icon-container {
@@ -3584,6 +3594,15 @@ nav ul li a {
 		-ms-align-items: center;
 		align-items: center;
 		text-align: left;
+	}
+
+	.icon-container.align-start {
+		align-items: flex-start;
+	}
+
+	#eight ul, #eight ul li {
+		list-style: none;
+		padding-left: 0;
 	}
 
 	
@@ -3763,7 +3782,7 @@ nav ul li a {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-color: #96bd8f;
+			background-color: #94ac91;
 			background-color: rgba(29, 29, 29, 0.205);
 			content: '';
 			height: 100%;
@@ -3807,7 +3826,7 @@ nav ul li a {
 		color: inherit;
 	  	width: 100%;
 		height: fit-content;
-	  	border-top: 1px dotted #90c187;
+	  	border-top: 1px dotted #8ca588;
 	 	border-radius: 0;
 	  	text-align: left;
 	  	outline: 0;		
@@ -3837,7 +3856,7 @@ nav ul li a {
 	}
 
 	.fa-caret-down {
-		color: #90c187;
+		color: #8ca588;
 	}
 
 	
@@ -3847,7 +3866,7 @@ nav ul li a {
 
 
 	button.accordion:hover {
-		background-color: #90c187;
+		background-color: #8ca588;
 		color: #ffffff !important;		
 	  }
 
@@ -3857,7 +3876,7 @@ nav ul li a {
 
 
 	button.active-acc {
-		background-color: #90c187;
+		background-color: #8ca588;
 		color: #ffffff !important;			
 	}
 	
@@ -3906,11 +3925,12 @@ nav ul li a {
 
 	#footer {
 		padding: 4em 0 4em 0 ;
-		background-color: #96bd8f;
+		background-color: #94ac91;
 		color: rgba(255, 255, 255, 0.932);		
+		text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);	
 		text-align: center;
-		box-shadow: inset rgb(50 50 93 / 25%) 0px 6px 12px -2px, 
-					inset rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+		box-shadow: inset rgba(50, 50, 93, 0.253) 0px 1px 10px, 
+					inset rgba(0, 0, 0, 0.185) 0px 2px 4px
 	}
 
 	#footer .container {
@@ -3926,6 +3946,32 @@ nav ul li a {
 		
 	}
 
+	#footer .container + .container {
+		justify-content: flex-start;			
+	}
+
+	#footer .wrapper {
+		margin: 0 0 0 2em;
+	}
+
+	#footer .wrapper:first-of-type {
+		margin: 0 0 0 0;
+	}
+
+
+	#footer p {
+		margin-bottom: 0.5em;
+	}
+
+	#footer ul {
+		padding: 0;
+	}
+	
+	#footer ul li {
+		list-style: none;
+		padding: 0;
+	}
+
 
 	#footer address {
 		display: -moz-flex;
@@ -3933,14 +3979,15 @@ nav ul li a {
 		display: -ms-flex;
 		display: flex;
 		flex-direction: column;
-		
+		align-items: start;	
 	}
 
-	
-	
-
-		#footer hr {
+		#footer > hr {
 			margin: 1em 10% 3em 10%;
+		}
+
+		#footer address hr {
+			width: 100%;
 		}
 
 		
@@ -3950,15 +3997,22 @@ nav ul li a {
 		}
 		
 
-		#footer a {
+		#footer li {
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 			text-align: left;
 		}
+		
 
-			#footer a:hover {
+			#footer li:hover {
 				color: #115c4d;
 			}
 
+		#footer .location, #footer p {
+			margin-bottom: 1.75em;
+			margin-right: 1.75em;
+			text-align: left;
+		}
+		
 		#footer h1, #footer h2, #footer h3, #footer h4, #footer h5, #footer h6, #footer strong, #footer b {
 			color: #ffffff;
 		}
@@ -4040,8 +4094,12 @@ nav ul li a {
 			font-size: 0.8em;
 			list-style: none;
 			margin: 2em 0 0 0;
-			padding: 0;
+			padding: 0;		
 		}
+
+			#footer .copyright p {
+				text-align: center;
+			}
 
 			#footer .copyright li {
 				border-left: solid 1px;
@@ -4056,6 +4114,7 @@ nav ul li a {
 					margin-left: 0;
 					padding: 0;
 				}
+			
 
 
 
@@ -4078,7 +4137,14 @@ nav ul li a {
 			
 		}
 
-		
+		#footer .wrapper {
+			margin: 0 0 0 0;
+		}
+
+		#footer .container + .container {
+			align-items: flex-start;
+		}
+	
 	}
 
 
@@ -4157,6 +4223,11 @@ nav ul li a {
 				background-attachment: scroll;
 			}
 
+			#footer .wrapper {
+				flex-direction: column;
+			}
+			
+
 	}
 
 /* Medium */
@@ -4208,7 +4279,7 @@ nav ul li a {
 		/* Map */
 
 			.map {
-				margin-top: 50px;
+				margin-top: 50px;				
 			 }
 
 		
