@@ -105,43 +105,51 @@
 								<h2>Contact Details</h2>												
 							</header>
 							<section>
-								<div class="icon-container">								
-									<div class="icon-box">
-											<span class="icon solid style1 fa-solid fa-user"></span>
-									</div>
-									<span>Linda Fern</span>
-								</div>
-								<div class="icon-container">	
-									<div class="icon-box">
-										<span class="icon solid style1 fa-solid fa-phone"></span>
-									</div>
-									<a href="tel:07840501425">07840 501 425</a>
-								</div>
-								<div class="icon-container">	
-									<div class="icon-box">
-										<span class="icon solid style1 fa-solid fa-envelope"></span>
-									</div>
-									<a href="mailto:lindaferncounselling@gmail.com">lindaferncounselling@gmail.com</a>
-								</div>								
+								<address>
+									<ul>
+										<li class="icon-container">
+											<div class="icon-box">
+												<span class="icon solid style1 fa-solid fa-user"></span>
+											</div>
+											<span>Linda Fern</span>
+										</li>
+										<li class="icon-container">
+											<div class="icon-box">
+												<span class="icon solid style1 fa-solid fa-phone"></span>
+											</div>
+											<a href="tel:07840501425">07840 501 425</a>
+										</li>
+										<li class="icon-container">
+											<div class="icon-box">
+												<span class="icon solid style1 fa-solid fa-envelope"></span>
+											</div>
+											<a href="mailto:lindaferncounselling@gmail.com">lindaferncounselling@gmail.com</a>
+										</li>
+									</ul>
+								</address>															
 							</section>
 							<hr>
 							<section>
-								<div class="icon-container align-start">	
-									<div class="icon-box">
-										<span class="icon solid style1 fa-solid fa-location-dot"></span>
-									</div>
-									<span>Lotus Therapy Centre, The Limes <br> 54 Nottingham Rd <br> <strong>Mansfield</strong> NG18 1BN</span>
-								</div>
-								<hr>
-								<div class="icon-container align-start">	
-									<div class="icon-box">
-										<span class="icon solid style1 fa-solid fa-location-dot"></span>
-									</div>
-									<span>Being Psychotherapy <br>
-										15 Vernon Street <br>
-										<strong>Derby</strong> DE1 1FT 
-									</span>
-								</div>
+								<address>
+									<ul>
+										<li class="icon-container align-start">
+											<div class="icon-box">
+												<span class="icon solid style1 fa-solid fa-location-dot"></span>
+											</div>
+											<span>Lotus Therapy Centre, The Limes <br> 54 Nottingham Rd <br> <strong>Mansfield</strong> NG18 1BN</span>
+										</li>
+										<hr>
+										<li class="icon-container align-start">
+											<div class="icon-box">
+												<span class="icon solid style1 fa-solid fa-location-dot"></span>
+											</div>
+											<span>Being Psychotherapy <br>
+												15 Vernon Street <br>
+												<strong>Derby</strong> DE1 1FT 
+											</span>
+										</li>
+									</ul>									
+								</address>
 							</section>						
 						</div>
 						<div class="map col-6 col-12-medium">
@@ -168,15 +176,19 @@
 						<form method="POST" action="https://formsubmit.co/lindaferncounselling@gmail.com"> <!-- your email -->
 							<div class="row gtr-uniform gtr-50">
 								<div class="col-4 col-12-xsmall">
+									<label for="name">Name</label>
 									<input type="text" name="name" id="name" value="" placeholder="Name *" required />
 								</div>
 								<div class="col-4 col-12-xsmall">
+									<label for="email">Email</label>
 									<input type="email" name="email" id="email" value="" placeholder="Email *" required />
 								</div>
 								<div class="col-4 col-12-xsmall">
+									<label for="tel">Phone Nr</label>
 									<input type="tel" name="tel" id="tel" value="" placeholder="Phone Number">
 								</div>
 								<div class="col-12">
+									<label for="message">Message</label>
 									<textarea name="message" id="message" placeholder="Enter your message" required rows="6"></textarea>
 								</div>
 
@@ -201,22 +213,38 @@
 			<div class="container">			
 				<div class="col-6 col-12-medium">
 					<address class="wrapper nest">
-						<a><span class="fa-solid fa-user"></span><span class="author">Linda Fern Counselling</span></a>
-						<a href="tel:07840501425"><span class="fa-solid fa-phone"></span><span class="nr">07840 501 425</span></a>
-						<a href="mailto:lindaferncounselling@gmail.com"><span class="fa-solid fa-envelope"></span>lindaferncounselling@gmail.com</a>
+						<ul>
+							<li>
+								<a><span class="fa-solid fa-user"></span><span class="author">Linda Fern Counselling</span></a>
+							</li>
+							<li>
+								<a href="tel:07840501425"><span class="fa-solid fa-phone"></span><span class="nr">07840 501 425</span></a>
+							</li>
+							<li>
+								<a href="mailto:lindaferncounselling@gmail.com"><span class="fa-solid fa-envelope"></span>lindaferncounselling@gmail.com</a>
+							</li>
+						</ul>				
+						
+						
 						<hr>
 						<p>In-person appointments available in both Mansfield and Derby.</p>
 						<div class="wrapper">
-						<a class="location">
-							<span class="fa-solid fa-location-dot"></span>
-							<br>
-							<span>Lotus Therapy Centre, The Limes <br> 54 Nottingham Rd, Mansfield NG18 1BN</span>
-						</a>
-						<a class="location">
-							<span class="fa-solid fa-location-dot"></span>
-							<br>
-							<span>Being Psychotherapy <br> 15 Vernon Street, Derby DE1 1FT </span>
-						</a>
+							<ul class="wrapper">
+								<li class="location">
+									<a href="#eight" class="scrolly">
+										<span class="fa-solid fa-location-dot"></span>
+										<br>
+										<span>Lotus Therapy Centre, The Limes <br> 54 Nottingham Rd, Mansfield NG18 1BN</span>
+									</a>
+								</li>
+								<li class="location">
+									<a href="#eight" class="scrolly">
+										<span class="fa-solid fa-location-dot"></span>
+										<br>
+										<span>Being Psychotherapy <br> 15 Vernon Street, Derby DE1 1FT </span>
+									</a>
+								</li>
+							</ul>
 						</div>		
 					</address>
 				</div>											

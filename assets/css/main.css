@@ -3600,6 +3600,11 @@ nav ul li a {
 		align-items: flex-start;
 	}
 
+	#eight ul, #eight ul li {
+		list-style: none;
+		padding-left: 0;
+	}
+
 	
 	
 /* Header */
@@ -3958,17 +3963,31 @@ nav ul li a {
 		margin-bottom: 0.5em;
 	}
 
+	#footer ul {
+		padding: 0;
+	}
+	
+	#footer ul li {
+		list-style: none;
+		padding: 0;
+	}
+
 
 	#footer address {
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
-		flex-direction: column;		
+		flex-direction: column;
+		align-items: start;	
 	}
 
 		#footer > hr {
 			margin: 1em 10% 3em 10%;
+		}
+
+		#footer address hr {
+			width: 100%;
 		}
 
 		
@@ -3978,13 +3997,13 @@ nav ul li a {
 		}
 		
 
-		#footer a {
+		#footer li {
 			border-bottom-color: rgba(255, 255, 255, 0.5);
 			text-align: left;
 		}
 		
 
-			#footer a:hover {
+			#footer li:hover {
 				color: #115c4d;
 			}
 
