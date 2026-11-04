@@ -5,10 +5,21 @@
 */
 
 
-@import url("/assets/css/all.css");
-@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
-@import url('https://fonts.googleapis.com/css2?family=Fanwood+Text&family=Jomhuria&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,200;8..144,300;8..144,400;8..144,600;8..144,700;8..144,900&display=swap');
+@import url("fontawesome-all.min.css");
+
+@font-face {
+    font-family: 'Fanwood Text';
+    src: url('../fonts/FanwoodText-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Roboto Flex';
+    src: url('../fonts/RobotoFlex.ttf') format('truetype');
+    font-weight: 200 900;
+	font-style: normal;
+}
 
 
 html, body, div, span, button, applet, object,
@@ -118,7 +129,7 @@ input, select, textarea {
 
 	body, input, select, textarea {
 		color: #666;
-		font-family: 'Roboto Flex', "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Roboto Flex', Helvetica, sans-serif;
 		font-size: 16pt;
 		font-weight: 200;
 		line-height: 1.65em;
@@ -135,7 +146,7 @@ input, select, textarea {
 
 		a:hover {
 			border-bottom-color: transparent !important;
-			color: #115c4d; 
+			color: #16454b; 
 			transition: color 0.1s linear;
 		}
 
@@ -221,11 +232,10 @@ input, select, textarea {
 
 	
 
-	blockquote {
-		border-left: solid 4px rgba(144, 144, 144, 0.5);
+	blockquote {		
 		font-style: italic;
 		margin: 0 0 2em 0;
-		padding: 0.5em 0 0.5em 2em;
+		padding: 0.5em 0 0.5em 0;
 	}
 
 	code {
@@ -342,7 +352,7 @@ section.nav {			/* nav section nav height original 100px*/
 } 
 
 nav .selected {
-	color: #155d4f;
+	color: #16454b;
 	font-weight: bolder;
 }
 
@@ -364,8 +374,8 @@ nav {
 	top: 0;
 	width: 100%;
 	height: 100px; /* nav height */
-	background: #94ac91;
-	border-bottom: 3px solid #94ac91;
+	background: #81988b;
+	border-bottom: 3px solid #81988b;
 	transition: top 0.3s;
 	box-shadow: rgba(50, 50, 93, 0.253) 0px 1px 10px, 
 				rgba(0, 0, 0, 0.185) 0px 2px 4px;
@@ -449,6 +459,7 @@ nav ul li a {
 	color: #ffffff;
 	text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);
 	text-decoration: none;
+	text-wrap: nowrap;
 	display: -moz-flex;
 	display: -webkit-flex;
 	display: -ms-flex;
@@ -587,7 +598,7 @@ nav ul li a {
 
 
 	.active li a {
-		color: #155d4f;
+		color: #16454b;
 		
 	  }
 
@@ -624,7 +635,7 @@ nav ul li a {
 		  (((var(--padding) * 2) + (var(--font-size) * 1.5))) * var(--childrenNumber)
 		);
 		/*   (Block Level Padding + The Font Size) * The Number of Children   */
-		border-bottom: 4px solid #94ac91;
+		border-bottom: 4px solid #81988b;
 		box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, 
 					rgb(0 0 0 / 30%) 0px 3px 7px -3px;
 		transition: 600ms ease;
@@ -666,7 +677,7 @@ nav ul li a {
 	font-weight: 300;
 }
 
-#four, #seven, #ten {
+#four, #seven {
 	margin-top: 50px;
 }
 
@@ -2871,7 +2882,7 @@ nav ul li a {
 		}
 
 		.icon.style2:before {
-			color: #8ca588;
+			color: #81988b;
 			text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);
 		}
 
@@ -2977,6 +2988,18 @@ nav ul li a {
 
 			.image.fit img {
 				width: 100%;
+			}
+
+		.image.rnd {
+			display: block;
+			margin: 0 0 2em 0;
+			width: 100%;			
+		}	
+
+			.image.rnd img {
+				width: 100%;
+				margin-inline: auto;
+				border-radius: 50%;
 			}
 
 		.image.logo-icon {
@@ -3243,7 +3266,7 @@ nav ul li a {
 	#map { 
 		height: 45em;
 		max-width: 100%;
-		border: 2px solid #8ca588; 
+		border: 2px solid #81988b; 
 		box-shadow: rgba(50, 50, 93, 0.253) 0px 1px 10px, 
 		 			rgba(0, 0, 0, 0.185) 0px 2px 4px;
 		 
@@ -3415,7 +3438,7 @@ nav ul li a {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #8ca588;
+			background-color: #81988b;
 			box-shadow: none !important;
 			color: #fff !important;
 		}
@@ -3425,7 +3448,7 @@ nav ul li a {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #7e9a79; /*hovercolor*/
+				background-color: #6e8678; /*hovercolor*/
 			}
 
 			input[type="submit"].primary:active,
@@ -3458,14 +3481,22 @@ nav ul li a {
 		.main.style1 {
 			background: #fff;
 		}
-		
 
+		#ten.main.style1 {
+			padding: 6em 0 0 0;
+		}
+	
 		.main.style2 {
 			background-color: #333;
 			color: rgba(255, 255, 255, 0.774);
 			background-attachment: fixed,							fixed;
-			background-image: url("images/overlay1.png"), url("../../images/header.jpg");
+			background-image: linear-gradient(0deg, rgba(55, 87, 79, 0.3), rgba(40, 59, 51, 0.815)), url("../../images/header2.webp");
 			background-size: auto,							cover;
+		}
+
+		.main.style2.alt {
+			background: #81988b;
+			background-image: none;
 		}
 
 			.main.style2 a {
@@ -3554,7 +3585,7 @@ nav ul li a {
 		}
 
 		#nine.main {
-			padding-top: 1em;
+			padding-top: 2em;
 		}
 		
 	.icon-box {
@@ -3571,7 +3602,7 @@ nav ul li a {
 		-ms-align-items: center;
 		align-items: center;
 		flex-shrink: 0;
-		background-color: #8ca588;
+		background-color: #81988b;
 		width: 40px;
 		height: 40px;
 		border-radius: 50%;
@@ -3581,7 +3612,15 @@ nav ul li a {
 	}
 
 	.icon-box:hover {
-		background-color: #7e9a79;
+		background-color: #6e8678;
+	}
+
+	.main.style2.alt .icon-box {
+				background-color: #ffffff;
+			}
+
+	.main.style2.alt .icon-box:hover {
+		background-color: #ffffff93;
 	}
 	
 	.icon-container {
@@ -3614,7 +3653,7 @@ nav ul li a {
 		background-color: #333;
 		color: rgba(255, 255, 255, 0.75);
 		background-attachment: fixed,							fixed;
-		background-image: url("images/overlay1.png"), url(/images/header.jpg);
+		background-image: url("images/overlay1.png"), url("../../images/header.webp");
 		background-position: top left,					center center;
 		background-size: auto,							cover;
 		overflow: hidden;
@@ -3782,7 +3821,7 @@ nav ul li a {
 			-webkit-transition: opacity 1s ease;
 			-ms-transition: opacity 1s ease;
 			transition: opacity 1s ease;
-			background-color: #94ac91;
+			background-color: #81988b;
 			background-color: rgba(29, 29, 29, 0.205);
 			content: '';
 			height: 100%;
@@ -3826,7 +3865,7 @@ nav ul li a {
 		color: inherit;
 	  	width: 100%;
 		height: fit-content;
-	  	border-top: 1px dotted #8ca588;
+	  	border-top: 1px dotted #81988b;
 	 	border-radius: 0;
 	  	text-align: left;
 	  	outline: 0;		
@@ -3856,7 +3895,7 @@ nav ul li a {
 	}
 
 	.fa-caret-down {
-		color: #8ca588;
+		color: #81988b;
 	}
 
 	
@@ -3866,7 +3905,7 @@ nav ul li a {
 
 
 	button.accordion:hover {
-		background-color: #8ca588;
+		background-color: #81988b;
 		color: #ffffff !important;		
 	  }
 
@@ -3876,7 +3915,7 @@ nav ul li a {
 
 
 	button.active-acc {
-		background-color: #8ca588;
+		background-color: #81988b;
 		color: #ffffff !important;			
 	}
 	
@@ -3925,7 +3964,7 @@ nav ul li a {
 
 	#footer {
 		padding: 4em 0 4em 0 ;
-		background-color: #94ac91;
+		background-color: #738b7e;
 		color: rgba(255, 255, 255, 0.932);		
 		text-shadow: 1px 1px 1px rgba(90, 90, 90, 0.267);	
 		text-align: center;
@@ -4004,7 +4043,7 @@ nav ul li a {
 		
 
 			#footer li:hover {
-				color: #115c4d;
+				color: #16454b;
 			}
 
 		#footer .location, #footer p {
@@ -4233,6 +4272,17 @@ nav ul li a {
 /* Medium */
 
 	@media screen and (max-width: 980px) {
+
+		/* Image */
+		.image.rnd img {
+				width: 60%;
+			}
+		
+		/* Blockquote */
+		blockquote {
+			max-width: 70%;
+			margin-inline: auto;
+		}	
 
 		/* List */
 

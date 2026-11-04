@@ -90,11 +90,14 @@ const bacp = document.querySelectorAll('.bacp-logo')
 Array.from(bacp).forEach(e => e.addEventListener('contextmenu', e => e.preventDefault()))
 
 
-// Map
+// Map - Leaflet
+
+const mapElement = document.getElementById('map');
+
+if (mapElement && typeof L !== 'undefined') {
 
 	const locations = [
-		["Lotus Therapy Center", 53.140442395542756, -1.1958635372977526],
-		["Being Psychotherapy", 52.92426570681056, -1.4902154740111735]
+		["Rosa Therapy Center", 53.140442395542756, -1.1958635372977526],
 	];
 
 	// map initialization - and address cordinates
@@ -125,6 +128,8 @@ Array.from(bacp).forEach(e => e.addEventListener('contextmenu', e => e.preventDe
 	// // leaflet handlers
 	// map.scrollWheelZoom.disable()
 	// map.dragging.disable()
+	
+}
 
 	
 // copyright current year
